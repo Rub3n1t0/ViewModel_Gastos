@@ -8,10 +8,10 @@ import androidx.lifecycle.ViewModel
 import br.unasp.meusgastos.model.Categoria
 import br.unasp.meusgastos.model.Gasto
 import br.unasp.meusgastos.model.GastoRepository
-import br.unasp.meusgastos.model.GastoRepositoryMemoria
+import br.unasp.meusgastos.model.GastoRepositoryDemo
 
 class GastosViewModel(
-    private val repositorio: GastoRepository = GastoRepositoryMemoria()
+    private val repositorio: GastoRepository = GastoRepositoryDemo() // era Memoria
 ) : ViewModel() {
 
     // ---------- 1. O QUE A TELA PRECISA SABER ----------
